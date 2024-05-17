@@ -1,0 +1,37 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    background: white;
+    gap: 20px;
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+}
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #f6f6f6;
+    gap: 20px;
+    color: black;
+}
+
+/* its for responsive */
+
+@media(max-width:800px){
+    .sidebar{
+        justify-content: center;
+        padding: 30px 0px;
+        flex-direction: row;
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+    .sidebar-item{
+        margin: 0;
+    }
+}
